@@ -17,7 +17,7 @@
  */
 /*
 
-Creates a cube in the first octant.
+Creates 3 mm radius sphere.
 
 Parameters :
 
@@ -25,4 +25,6 @@ Parameters :
 
 */
 
-sphere(r = 10);
+$fn = 100;
+
+sphere(r = 3);

@@ -21,4 +21,6 @@ Creates 1 mm radius sphere.
 
 */
 
+$fn = 100;
+
 sphere();
