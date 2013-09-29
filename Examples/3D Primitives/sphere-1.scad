@@ -17,7 +17,7 @@
  */
 /*
 
-Creates 1 mm radius sphere.
+Creates 1 unit radius sphere.
 
 */
 

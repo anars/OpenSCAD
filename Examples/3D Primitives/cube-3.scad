@@ -17,8 +17,7 @@
  */
 /*
 
-Creates a cube in the first octant.
-The argument names are optional if the arguments are given in the same order as specified in the parameters.
+Creates a cube with sides of that 1 unit length in the first octant. The argument names are optional if the arguments are given in the same order as specified in the parameters.
 
 Parameters :
 

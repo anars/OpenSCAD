@@ -17,7 +17,7 @@
  */
 /*
 
-Creates 3 mm radius sphere.
+Creates 3 unit radius sphere.
 
 Parameters :
 

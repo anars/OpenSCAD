@@ -17,8 +17,7 @@
  */
 /*
 
-Creates a cube. If true, object is centered at (0,0,0). Otherwise, the cube is placed in the positive quadrant with one corner at (0,0,0).
-
+Creates a cube with sides of that 5 unit length and it is is centered at (0,0,0).
 
 Parameters :
 

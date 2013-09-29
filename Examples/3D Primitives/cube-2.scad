@@ -17,7 +17,7 @@
  */
 /*
 
-Creates a cube in the first octant.
+Creates a cube with sides of that 5 unit length in the first octant.
 
 Parameters :
 
