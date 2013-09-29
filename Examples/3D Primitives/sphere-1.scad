@@ -21,6 +21,6 @@ Creates 1 unit radius sphere.
 
 */
 
-$fn = 100;
+$fs = 0;
 
 sphere();

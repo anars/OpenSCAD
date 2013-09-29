@@ -21,6 +21,6 @@ Creates 1 unit radius, 1 unit height cylinder.
 
 */
 
-$fn = 100;
+$fs = 0;
 
 cylinder();

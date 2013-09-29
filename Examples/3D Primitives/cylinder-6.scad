@@ -25,6 +25,6 @@ Parameters :
 
 */
 
-$fn = 100;
+$fs = 0;
 
 cylinder(r2 = 3);
