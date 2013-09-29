@@ -17,7 +17,7 @@
  */
 /*
 
-Creates a cube with sides of that 1 unit length in the first octant.
+Creates a cube with sides of that 1 mm length in the first octant.
 
 */
 
