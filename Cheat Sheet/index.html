@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OpenSCAD Cheat Sheet</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+		<meta charset="UTF-8"> 
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="masonry.pkgd.min.js"><!-- --></script>
+	</head>
+	<body>
+		<h1>OpenSCAD Cheat Sheet</h1>
+		<div id="container" class="js-masonry" data-masonry-options='{ "columnWidth": 1, "itemSelector": ".section" }'>
+			<div class="section">
+				<h2>3D Primitives</h2>
+				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="param">size</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="param">size</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="comma">,</span> <span class="param">depth</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="comma">,</span> <span class="param">depth</span><span class="bracket">]</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="param">height</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="param">height</span><span class="comma">,</span> <span class="param">radius</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="param">height</span><span class="comma">,</span> <span class="param">radius</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="param">height</span><span class="comma">,</span> <span class="param">bottom_radius</span><span class="comma">,</span> <span class="param">top_radius</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">cylinder</span><span class="bracket">(</span><span class="param">height</span><span class="comma">,</span> <span class="param">bottom_radius</span><span class="comma">,</span> <span class="param">top_radius</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">sphere</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">sphere</span><span class="bracket">(</span><span class="param">radius</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">polyhedron</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">polyhedron</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="param">convexity</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+			<div class="section">
+				<h2>2D Primitives</h2>
+				<code><span class="keyword">square</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">square</span><span class="bracket">(</span><span class="param">size</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">square</span><span class="bracket">(</span><span class="param">size</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">circle</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">circle</span><span class="bracket">(</span><span class="param">radius</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="keyword">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="param">convexity</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+		</div>
+	</body>
+</html>
+
