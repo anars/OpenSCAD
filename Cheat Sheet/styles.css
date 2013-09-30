@@ -67,5 +67,28 @@ code
 .param
 	{
 	color: #8b0000;
-	}	
-
+	}
+.curlies
+	{
+	color: #202014;
+	}
+.csgop
+	{
+	color: #00008B;
+	}
+.special
+	{
+	color: #0000FF;
+	}
+.comment
+	{
+	color: #008b8b;
+	}
+.math
+	{
+	color: #00008B;
+	}
+.prim2d
+	{
+	color: #191970
+	}
