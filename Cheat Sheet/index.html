@@ -81,17 +81,32 @@
 				<code><span class="math">exp</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">floor</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">ln</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">len</span></code>
+				<code><span class="math">len</span><span class="bracket">(<span class="bracket">[</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">log</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">lookup</span></code>
-				<code><span class="math">max</span></code>
-				<code><span class="math">min</span></code>
-				<code><span class="math">norm</span></code>
-				<code><span class="math">pow</span></code>
-				<code><span class="math">rands</span></code>
+				<code><span class="math">lookup</span><span class="bracket">(</span><span class="param">lookup_key</span><span class="comma">,</span> <span class="bracket">[[</span><span class="param">key</span>, <span class="param">value</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">max</span><span class="bracket">(</span><span class="param">value</span><span class="comma">,</span> <span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">min</span><span class="bracket">(</span><span class="param">value</span><span class="comma">,</span> <span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">norm</span><span class="bracket">(<span class="bracket">[</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">pow</span><span class="bracket">(</span><span class="param">base</span><span class="comma">,</span> <span class="param">exponent</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">rands</span><span class="bracket">(<span class="param">minimum</span>, <span class="param">maximum</span>, <span class="param">number_of_returns</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">rands</span><span class="bracket">(<span class="param">minimum</span>, <span class="param">maximum</span>, <span class="param">number_of_returns</span>, <span class="param">seed</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">round</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">sign</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">sqrt</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+			<div class="section">
+				<h2>Transformations</h2>
+				<code><span class="math">scale</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">resize</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">rotate</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">rotate</span><span class="bracket">(</span><span class="param">degree</span>, <span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">translate</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">mirror</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">multmatrix</span></code>
+				<code><span class="math">color</span><span class="bracket">(</span><span class="quote">&quot;color_name&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">color</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">red</span>, <span class="param">green</span>, <span class="param">blue</span>, <span class="param">alpha</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">minkowski</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
+				<code><span class="math">hull</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
 			</div>
 			<div class="section">
 				<h2>String Functions</h2>
