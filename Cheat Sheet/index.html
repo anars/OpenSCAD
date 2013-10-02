@@ -12,7 +12,7 @@
 		<h1>OpenSCAD Cheat Sheet</h1>
 		<div id="container" class="js-masonry" data-masonry-options='{ "columnWidth": 1, "itemSelector": ".section" }'>
 			<div class="section">
-				<h2>3D Primitives</h2>
+				<h2>3D<br/>Primitives</h2>
 				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="param">size</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="keyword">cube</span><span class="bracket">(</span><span class="param">size</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
@@ -30,52 +30,7 @@
 				<code><span class="keyword">polyhedron</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>,&hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="param">convexity</span><span class="bracket">)</span><span class="operator">;</span></code>
 			</div>
 			<div class="section">
-				<h2>2D Primitives</h2>
-				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="param">size</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="param">size</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">circle</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">circle</span><span class="bracket">(</span><span class="param">radius</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="prim2d">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="param">convexity</span><span class="bracket">)</span><span class="operator">;</span></code>
-			</div>
-			<div class="section">
-				<h2>Modifier Characters</h2>
-				<code><span class="operator">%</span> <span class="comment">Background</span></code>
-				<code><span class="operator">#</span> <span class="comment">Debug</span></code>
-				<code><span class="operator">!</span> <span class="comment">Root</span></code>
-				<code><span class="operator">*</span> <span class="comment">Disable</span></code>
-			</div>
-			<div class="section">
-				<h2>Special Variables</h2>
-				<code><span class="special">$fa</span> <span class="comment">Min fragment angle</span></code>
-				<code><span class="special">$fs</span> <span class="comment">Min fragment size</span></code>
-				<code><span class="special">$fn</span> <span class="comment">Number of fragments</span></code>
-				<code><span class="special">$t</span> <span class="comment">Animation step</span></code>
-				<code><span class="special">$vpr</span> <span class="comment">Viewport rotation</span></code>
-				<code><span class="special">$vpt</span> <span class="comment">Viewport translation</span></code>
-			</div>
-			<div class="section">
-				<h2>CSG Modeling</h2>
-				<code><span class="csgop">union</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
-				<code><span class="csgop">difference</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
-				<code><span class="csgop">intersection</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
-				<code><span class="csgop">render</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
-			</div>
-			<div class="section">
-				<h2>Trigonometric Functions</h2>
-				<code><span class="math">cos</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">sin</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">tan</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">acos</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">asin</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">atan</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">atan2</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
-			</div>
-			<div class="section">
-				<h2>Mathematical Functions</h2>
+				<h2>Mathematical<br/>Functions</h2>
 				<code><span class="math">abs</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">ceil</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">exp</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
@@ -95,7 +50,60 @@
 				<code><span class="math">sqrt</span><span class="bracket">(</span><span class="param">value</span><span class="bracket">)</span><span class="operator">;</span></code>
 			</div>
 			<div class="section">
-				<h2>Transformations</h2>
+				<h2>2D<br/>Primitives</h2>
+				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="param">size</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="param">size</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">square</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">width</span><span class="comma">,</span> <span class="param">height</span><span class="bracket">]</span><span class="comma">,</span> <span class="param">center</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">circle</span><span class="bracket">(</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">circle</span><span class="bracket">(</span><span class="param">radius</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="prim2d">polygon</span><span class="bracket">([[</span><span class="param">x</span>, <span class="param">y</span><span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="bracket">[[</span><span class="param">p1</span>, <span class="param">p2</span>, <span class="param">p3</span>, &hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">]</span>, <span class="param">convexity</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+			<div class="section">
+				<h2>String<br/>Functions</h2>
+				<code><span class="math">len</span><span class="bracket">(</span><span class="quote">&quot;value&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">str</span><span class="bracket">(</span><span class="quote">&quot;value&quot;</span>, </span><span class="param">value</span><span class="bracket">, [</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;match&quot;</span>, <span class="quote">&quot;value&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;match&quot;</span>, <span class="quote">&quot;value&quot;</span>, <span class="param">returns_per_match</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;match&quot;</span>, <span class="quote">&quot;value&quot;</span>, <span class="param">returns_per_match</span>, <span class="param">index_column</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+			<div class="section">
+				<h2>Modifier<br/>Characters</h2>
+				<code><span class="operator">%</span> <span class="comment">Background</span></code>
+				<code><span class="operator">#</span> <span class="comment">Debug</span></code>
+				<code><span class="operator">!</span> <span class="comment">Root</span></code>
+				<code><span class="operator">*</span> <span class="comment">Disable</span></code>
+			</div>
+			<div class="section">
+				<h2>Special<br/>Variables</h2>
+				<code><span class="special">$fa&nbsp;</span> <span class="comment">Min fragment angle</span></code>
+				<code><span class="special">$fs&nbsp;</span> <span class="comment">Min fragment size</span></code>
+				<code><span class="special">$fn&nbsp;</span> <span class="comment">Number of fragments</span></code>
+				<code><span class="special">$t&nbsp;&nbsp;</span> <span class="comment">Animation step</span></code>
+				<code><span class="special">$vpr</span> <span class="comment">Viewport rotation</span></code>
+				<code><span class="special">$vpt</span> <span class="comment">Viewport translation</span></code>
+			</div>
+			<div class="section">
+				<h2>CSG<br/>Modeling</h2>
+				<code><span class="csgop">union</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
+				<code><span class="csgop">difference</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
+				<code><span class="csgop">intersection</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
+				<code><span class="csgop">render</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
+			</div>
+			<div class="section">
+				<h2>Trigonometric<br/>Functions</h2>
+				<code><span class="math">cos</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">sin</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">tan</span><span class="bracket">(</span><span class="param">degrees</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">acos</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">asin</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">atan</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">atan2</span><span class="bracket">(</span><span class="param">radians</span><span class="bracket">)</span><span class="operator">;</span></code>
+			</div>
+			<div class="section">
+				<h2>Transformation<br/>Functions</h2>
 				<code><span class="math">scale</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">resize</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">rotate</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
@@ -103,18 +111,33 @@
 				<code><span class="math">translate</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">mirror</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">x</span>, <span class="param">y</span>, <span class="param">z</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">multmatrix</span></code>
-				<code><span class="math">color</span><span class="bracket">(</span><span class="quote">&quot;color_name&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<code><span class="math">color</span><span class="bracket">(</span><span class="quote">&quot;name&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">color</span><span class="bracket">(</span><span class="bracket">[</span><span class="param">red</span>, <span class="param">green</span>, <span class="param">blue</span>, <span class="param">alpha</span><span class="bracket">]</span><span class="bracket">)</span><span class="operator">;</span></code>
 				<code><span class="math">minkowski</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
 				<code><span class="math">hull</span><span class="bracket">(</span><span class="bracket">)</span> <span class="bracket">{</span>&hellip;<span class="bracket">}</span></code>
 			</div>
 			<div class="section">
-				<h2>String Functions</h2>
-				<code><span class="math">len</span><span class="bracket">(</span><span class="quote">&quot;string&quot;</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">str</span><span class="bracket">(</span><span class="quote">&quot;string&quot;</span>, </span><span class="param">value</span><span class="bracket">, [</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;string&quot;</span>, </span><span class="param">value</span><span class="bracket">, [</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span>,&hellip;<span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;string&quot;</span>, </span><span class="param">value</span><span class="bracket">, [</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span>,&hellip;, <span class="param">returns_per_match</span><span class="bracket">)</span><span class="operator">;</span></code>
-				<code><span class="math">search</span><span class="bracket">(</span><span class="quote">&quot;string&quot;</span>, </span><span class="param">value</span><span class="bracket">, [</span><span class="param">v1</span>, <span class="param">v2</span>, <span class="param">v3</span>,&hellip;<span class="bracket">]</span>,&hellip;, <span class="param">returns_per_match</span>, <span class="param">index_column</span><span class="bracket">)</span><span class="operator">;</span></code>
+				<h2>Arithmetical<br/>Operators</h2>
+				<code><span class="operator">+</span> <span class="comment">Add</span></code>
+				<code><span class="operator">-</span> <span class="comment">Subtract</span></code>
+				<code><span class="operator">*</span> <span class="comment">Multiply</span></code>
+				<code><span class="operator">/</span> <span class="comment">Divide</span></code>
+				<code><span class="operator">%</span> <span class="comment">Modulo</span></code>
+			</div>
+			<div class="section">
+				<h2>Relational<br/>Operators</h2>
+				<code><span class="operator">&lt;&nbsp;</span> <span class="comment">Less than</span></code>
+				<code><span class="operator">&lt;=</span> <span class="comment">Less equal</span></code>
+				<code><span class="operator">==</span> <span class="comment">Equal</span></code>
+				<code><span class="operator">!=</span> <span class="comment">Not equal</span></code>
+				<code><span class="operator">&gt;=</span> <span class="comment">Greater equal</span></code>
+				<code><span class="operator">&gt;&nbsp;</span> <span class="comment">Greater than</span></code>
+			</div>
+			<div class="section">
+				<h2>Logical<br/>Operators</h2>
+				<code><span class="operator">&amp;&amp;</span> <span class="comment">Logical AND</span></code>
+				<code><span class="operator">||</span> <span class="comment">Logical OR</span></code>
+				<code><span class="operator">!&nbsp;</span> <span class="comment">Logical NOT</span></code>
 			</div>
 		</div>
 	</body>

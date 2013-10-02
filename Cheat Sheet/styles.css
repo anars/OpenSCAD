@@ -1,5 +1,6 @@
 html
 	{
+	color: #000000;
 	font-family: sans-serif;
 	}
 	
@@ -39,10 +40,14 @@ h1
 
 h2
 	{
-	display: block;
-	white-space: nowrap;
+	color: #333333;
 	text-shadow: 2px 2px 3px #888888;
 	filter: dropshadow(color = #888888, offx = 2, offy = 2); 
+	margin-top: 8px;
+	margin-bottom: 5px;
+	display: block;
+	white-space: nowrap;
+	font-size: 125%
 	}
 
 code
