@@ -1,2 +1,2 @@
-OpenSCAD-Workshop
-=================
+OpenSCAD
+========
