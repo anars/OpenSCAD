@@ -57,7 +57,7 @@ code
 	height: 1.25em;
 	}
 	
-.keyword
+.prim3d
 	{
 	color: #00008B;
 	}
@@ -100,4 +100,12 @@ code
 .quote
 	{
 	color: #8b008b;
+	}
+.modfunc
+	{
+	color: #00008B;
+	}
+.import
+	{
+	color: #00008B;
 	}
