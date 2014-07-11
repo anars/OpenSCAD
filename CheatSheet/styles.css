@@ -50,62 +50,58 @@ h2
 	font-size: 125%
 	}
 
+small
+	{
+	color: #333333;
+	text-shadow: 2px 2px 3px #888888;
+	filter: dropshadow(color = #888888, offx = 1, offy = 1); 
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	display: block;
+	white-space: nowrap;
+	text-align: right;
+	/* font-size: 125% */
+	}
+
 code
 	{
 	display: block;
 	white-space: nowrap;
 	height: 1.25em;
 	}
-	
-.prim3d
+
+.keyword
 	{
 	color: #00008B;
 	}
+	
 .bracket
 	{
 	color: #006400;
 	}
+
 .operator
 	{
 	color: #0000FF;
 	}
+
 .param
 	{
 	color: #8b0000;
 	}
-.curlies
-	{
-	color: #202014;
-	}
-.csgop
-	{
-	color: #00008B;
-	}
+
 .special
 	{
 	color: #0000FF;
 	}
+
 .comment
 	{
 	color: #008b8b;
 	}
-.math
-	{
-	color: #00008B;
-	}
-.prim2d
-	{
-	color: #191970;
-	}
+
 .quote
 	{
 	color: #8b008b;
-	}
-.modfunc
-	{
-	color: #00008B;
-	}
-.import
-	{
-	color: #00008B;
 	}
