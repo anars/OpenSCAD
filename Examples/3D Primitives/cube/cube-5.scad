@@ -1,6 +1,6 @@
 /*
  * OpenSCAD Workshop Examples
- * Copyright (c) 2013 Anar Software LLC. < http://anars.com >
+ * Copyright (c) 2013-2016 Anar Software LLC. < http://anars.com >
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -17,12 +17,13 @@
  */
 /*
 
-Creates a cube with sides of that 5 unit length and it is is centered at (0,0,0).
+Creates a rectangular prism.
+
 
 Parameters :
 
-	cube(size = x, center = boolean);
+	cube(size = [width, height, depth]);
 
 */
 
-cube(size = 5, center = true);
+cube(size = [1, 2, 3]);

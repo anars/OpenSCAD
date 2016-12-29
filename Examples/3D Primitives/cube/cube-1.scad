@@ -1,6 +1,6 @@
 /*
  * OpenSCAD Workshop Examples
- * Copyright (c) 2013 Anar Software LLC. < http://anars.com >
+ * Copyright (c) 2013-2016 Anar Software LLC. < http://anars.com >
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -17,12 +17,8 @@
  */
 /*
 
-Creates a cube with sides of that 1 unit length in the first octant. The argument names are optional if the arguments are given in the same order as specified in the parameters.
-
-Parameters :
-
-	cube(x);
+Creates a cube with sides of that 1 unit length in the first octant.
 
 */
 
-cube(5);
+cube();
