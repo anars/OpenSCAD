@@ -1,6 +1,6 @@
 /*
  * OpenSCAD Workshop Examples
- * Copyright (c) 2013-2017 Anar Software LLC. < http://anars.com >
+ * Copyright (c) 2013-2018 Anar Software LLC. < http://anars.com >
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -19,19 +19,17 @@
 $fn=50;
 
 %cube([10, 10, 10]);
+
 rounded_cube([10, 10, 10], 2, true);
 
-translate([12,0,0])
-{
+translate([12,0,0]) {
     %cube([10, 10, 10]);
     rounded_cube([10, 10, 10], 2, false);
 }
 
-module rounded_cube(size, radius, sidesonly)
-{
+module rounded_cube(size, radius, sidesonly) {
     translate([radius, radius, sidesonly ? 0 : radius])
-    minkowski()
-    {
+    minkowski() {
         cube(size=[size[0] - radius * 2, size[1] - radius * 2, size[2] - (sidesonly ? 1 : radius * 2)]);
         if (sidesonly)
             cylinder(r=radius);

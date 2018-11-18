@@ -1,6 +1,6 @@
 /*
  * OpenSCAD Workshop Examples
- * Copyright (c) 2013-2017 Anar Software LLC. < http://anars.com >
+ * Copyright (c) 2013-2018 Anar Software LLC. < http://anars.com >
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -17,17 +17,16 @@
  */
 
 $fn=50;
+
  //polygon(points=[[0,0],[100,0],[0,100],[10,10],[80,10],[10,80]], paths=[[0,1,2],[3,4,5]],convexity=10);
  
  roundedPolygon([[0,0],[100,0],[0,100],[10,10],[80,10],[10,80]], [[0,1,2],[3,4,5]], 10, 2);
  
-module roundedPolygon(points, paths, height, radius)
-{
-linear_extrude(height=height, convexity=3)
-hull()
-for(pt = points)
-{
-translate([pt[0], pt[1], 0])
-circle(r=radius);
-}
+module roundedPolygon(points, paths, height, radius) {
+    linear_extrude(height=height, convexity=3)
+    hull()
+    for(pt = points) {
+        translate([pt[0], pt[1], 0])
+            circle(r=radius);
+    }
 }
